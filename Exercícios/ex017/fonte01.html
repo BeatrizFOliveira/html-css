@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com fontes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas:
+            cm, mm, in (polegada), px (pixel) (recomendável), pt (ponto), pc (paica)
+
+            Medidas Relativas:
+            em (relativa ao tamanho atual da fonte) (mais recomendável), 
+            ex (relativa a altura x da fonte),
+            rem (relativo ao root),
+            vw (relativo a largura da tela),
+            vh (relativo a altura da tela),
+            % (porcentagem da tela)
+
+            16 px geralmente = 1em
+
+            */
+
+            font-size: 1em;
+            /*Nem todas as fontes tem todas essas opções de peso, estilo e decoração:*/
+            font-weight: bold;
+            /* Peso: lighter, normal, bold, bolder ou 100 - 900*/
+            font-style: italic;
+            text-decoration: underline;
+            
+        }
+        h1 {
+            /*shorthand font = "condensar a formatação da fonte"
+            font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus mollitia voluptatum possimus eligendi. Pariatur ab, quo ullam magnam eaque sint soluta alias sed ex iste, reiciendis sapiente possimus tenetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nisi, id iusto et, at repellendus quis perspiciatis modi dolore ea labore voluptas. Neque quidem, eos nulla beatae aspernatur soluta labore?</p>
+    <h2>Subtópico do texto</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolores blanditiis? Est quis sunt illum sed, vel, ullam cupiditate consequatur mollitia optio fuga quod corrupti numquam quia. Suscipit, aliquam atque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores aspernatur neque dolorem quasi architecto laboriosam officia dignissimos eum eligendi vitae libero, saepe similique consequatur voluptatem cum amet ipsum consequuntur.</p>
+</body>
+</html>
