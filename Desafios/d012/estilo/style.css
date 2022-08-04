@@ -4,7 +4,7 @@
 
 :root {
     --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte-titulo: 'Passion One', Verdana, sans-serif;
+    --fonte-titulo: 'Passion One', cursive;
     --fonte-texto: 'Sriracha', cursive;
 }
 
@@ -15,10 +15,10 @@
 }
 
 /*--------------------------------------------------*/
-body {
-    width: 100%;
+html, body {
+    min-height: 100vh;
     background-color: black;
-    color: white;
+    font-family: var(--fonte-padrao);
 }
 
 a {
@@ -65,6 +65,8 @@ section.fundo-solido > p {
     padding-bottom: 2em;
 }
 section.fundo-imagem {
+    background-color: black;
+    color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.47);
 }
 section#imagem1 {
@@ -82,7 +84,6 @@ section#imagem2 {
     background-attachment: fixed;
 }
 section.fundo-imagem > p {
-    background-color: lightblue;
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.514);
