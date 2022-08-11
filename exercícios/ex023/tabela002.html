@@ -12,6 +12,7 @@
         table {
             width: 500px; 
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -20,9 +21,24 @@
         td.num {
             text-align: right;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        /*Ao invés de even (par) podemos usar odd (ímpar), 2n ou 2n-1*/
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -31,6 +47,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION = legenda
             THEAD
                 TR, TD, TH
             TBODY
@@ -39,10 +56,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -157,10 +175,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>213 317 639</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam non, atque vel consequatur exercitationem molestias. Autem, asperiores? Obcaecati quos officiis, libero rerum voluptatum suscipit. Fuga fugit aperiam minus unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi aliquid ut mollitia fugit, sint autem doloremque est voluptatum ipsa quae hic inventore ipsum. Sapiente voluptatum quos optio atque dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum enim dolorum dolor beatae fuga iure modi, deleniti unde, maiores ratione ab distinctio provident quae amet corporis error ipsum placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptas expedita nesciunt nobis provident sed dolores cum, facere magni ab? Odio amet earum totam reiciendis porro mollitia deserunt tempore nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam non, atque vel consequatur exercitationem molestias. Autem, asperiores? Obcaecati quos officiis, libero rerum voluptatum suscipit. Fuga fugit aperiam minus unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi aliquid ut mollitia fugit, sint autem doloremque est voluptatum ipsa quae hic inventore ipsum. Sapiente voluptatum quos optio atque dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum enim dolorum dolor beatae fuga iure modi, deleniti unde, maiores ratione ab distinctio provident quae amet corporis error ipsum placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptas expedita nesciunt nobis provident sed dolores cum, facere magni ab? Odio amet earum totam reiciendis porro mollitia deserunt tempore nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam non, atque vel consequatur exercitationem molestias. Autem, asperiores? Obcaecati quos officiis, libero rerum voluptatum suscipit. Fuga fugit aperiam minus unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi aliquid ut mollitia fugit, sint autem doloremque est voluptatum ipsa quae hic inventore ipsum. Sapiente voluptatum quos optio atque dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum enim dolorum dolor beatae fuga iure modi, deleniti unde, maiores ratione ab distinctio provident quae amet corporis error ipsum placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptas expedita nesciunt nobis provident sed dolores cum, facere magni ab? Odio amet earum totam reiciendis porro mollitia deserunt tempore nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam non, atque vel consequatur exercitationem molestias. Autem, asperiores? Obcaecati quos officiis, libero rerum voluptatum suscipit. Fuga fugit aperiam minus unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi aliquid ut mollitia fugit, sint autem doloremque est voluptatum ipsa quae hic inventore ipsum. Sapiente voluptatum quos optio atque dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum enim dolorum dolor beatae fuga iure modi, deleniti unde, maiores ratione ab distinctio provident quae amet corporis error ipsum placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptas expedita nesciunt nobis provident sed dolores cum, facere magni ab? Odio amet earum totam reiciendis porro mollitia deserunt tempore nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam non, atque vel consequatur exercitationem molestias. Autem, asperiores? Obcaecati quos officiis, libero rerum voluptatum suscipit. Fuga fugit aperiam minus unde! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi aliquid ut mollitia fugit, sint autem doloremque est voluptatum ipsa quae hic inventore ipsum. Sapiente voluptatum quos optio atque dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum enim dolorum dolor beatae fuga iure modi, deleniti unde, maiores ratione ab distinctio provident quae amet corporis error ipsum placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptas expedita nesciunt nobis provident sed dolores cum, facere magni ab? Odio amet earum totam reiciendis porro mollitia deserunt tempore nisi!</p>
+
 </body>
 </html>
