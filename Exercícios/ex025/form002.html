@@ -7,6 +7,20 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuário</label>
+            <input type="text" name="users" id="iuser" required size="10" placeholder="Nome (Ex: José)" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="8" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>

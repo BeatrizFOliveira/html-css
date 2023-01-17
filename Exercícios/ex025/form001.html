@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+<!-- 
+    Não se pode usar método GET quando:
+        O formulário tem mais de 3000 caracteres (3000 bytes);
+        Se tiver campos sensíveis (nº de cartão, senhas);
+        Se tiver envio de imagens e arquivos;
+    Nesses casos utiliza POST
+-->
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form autocomplete="off" action="cadastro.php">
+    <form autocomplete="off" action="cadastro.php" method="post">
         <p><label for="inome">Nome</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome</label> 
