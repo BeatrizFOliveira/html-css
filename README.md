@@ -13,4 +13,8 @@
  
  <a href="https://beatrizfoliveira.github.io/html-css/Desafios/d012/">Projeto Cordel<a>
  
- Este foi um projeto desenvolvido no Módulo 3 do curso de HTML e CSS do CursoemVideo o objetivo era a construção de um site usando efeito Parallax, com objetivo de ser exibido em dispositivos móveis como tablets e celulares.
+ Este foi um projeto desenvolvido no Módulo 3 do curso de HTML e CSS do CursoemVideo, o objetivo era a construção de um site usando efeito Parallax, com objetivo de ser exibido em dispositivos móveis como tablets e celulares.
+
+ <a href="https://beatrizfoliveira.github.io/html-css/Desafios/d014/">Projeto Social<a>
+
+ Este foi um projeto desenvolvido no Módulo 4 do curso de HTML e CSS do CursoemVideo o objetivo foi construir um site utilizando conhecimentos de iframe, posicionamento de imagens e conteúdos já estudados para divulgação das redes sociais.
