@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Os botões do tipo radio tem que ter o mesmo nome -->
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> Masculino <br>
+            <input type="radio" name="sexo" id="ifem" value="F" checked> Feminino
+        </fieldset>
+        <fieldset>
+            <legend>Estilos musicais favoritos</legend>
+            <input type="checkbox" name="rock" id="irock">
+            <label for="irock">Rock</label><br>
+            
+            <input type="checkbox" name="pop" id="ipop" checked>
+            <label for="ipop">Pop</label><br>
+            
+            <input type="checkbox" name="funk" id="ifunk">
+            <label for="ifunk">Funk</label><br>
+            
+            <input type="checkbox" name="class" id="iclass">
+            <label for="iclass">Clássica</label><br>
+            
+            <input type="checkbox" name="eletr" id="ieletr">
+            <label for="ieletr">Eletrônica</label><br>
+            
+            <input type="checkbox" name="gospel" id="igospel"> 
+            <label for="igospel">Gospel</label><br>
+        </fieldset>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+</html>
