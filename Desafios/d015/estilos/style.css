@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #37B6AB;
+    --cor02: #C5DFE0;
+    --cor03: #DBDAD6;
+    --cor04: #B63A32;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--cor01), var(--cor02));
+}
+
+main{
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 10px 20px 10px;
+}
+main > h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+main > p{
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+}
+main > form > div{
+    background-color: #B63A32;
+    width: 90vw;
+    padding-bottom: 5px;
+}
+input.botao{
+    width: 90vw;
+    height: 35px;
+    color: gray;
+    background-color: white;
+    border: 1px solid var(--cor01);
+    border-radius: 5px;
+}
+input#isenha, input#iemail{
+    width: 80vw;
+}
+input.botao:hover{
+    color: white;
+    background-color: var(--cor01);
+    transition: .4s;
+}
