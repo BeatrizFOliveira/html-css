@@ -31,8 +31,7 @@
         padding: 10px;
     }
     header > h1{
-        margin: 0px 60px 0px 0px;
-        text-align: center;
+        flex: 0 0 200px;
         padding: 10px;
         color: white;
     }
@@ -82,7 +81,7 @@
         flex-flow: column nowrap;
     }
     header > h1{
-        margin: 0px;
+        flex: 0 0 auto;
         text-align: center;
     }
     nav{
