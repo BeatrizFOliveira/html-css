@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout - Propriedades 1</title>
+    <style>
+        .conteiner{
+            border: 3px solid blue;
+            display: grid;
+            grid-template: 80px 80px 80px/1fr 4fr 1fr;
+            grid-auto-flow: column;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 100px;
+            gap: 10px;
+            place-items: normal normal;
+            place-content: normal normal;  
+        }
+        .item{
+            border: 2px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
